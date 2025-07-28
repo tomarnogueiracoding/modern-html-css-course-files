@@ -7,5 +7,65 @@
   </head>
   <body>
     <h1>HTML & CSS Sandbox - Datalist</h1>
+
+    <!-- General list select -->
+    <label for="fav-language">Favorite Programming Languages</label>
+    <input list="languages" id="fav-language" name="fav-language" />
+    <datalist id="languages">
+      <option value="JavaScript"></option>
+      <option value="PHP"></option>
+      <option value="Python"></option>
+      <option value="Ruby"></option>
+      <option value="C"></option>
+      <option value="C#"></option>
+    </datalist>
+
+    <br /><br />
+
+    <!-- Time -->
+    <input type="time" list="popular-hours" />
+    <datalist id="popular-hours">
+      <option value="10:00"></option>
+      <option value="11:00"></option>
+      <option value="12:00"></option>
+    </datalist>
+
+    <br /><br />
+
+    <!-- Range -->
+    <label for="tick">Tip Amount</label>
+    <input
+      type="range"
+      name="tick"
+      id="tick"
+      list="tickmarks"
+      min="0"
+      max="100"
+    />
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+      <option value="100"></option>
+    </datalist>
+
+    <br /><br />
+
+    <!-- Colors -->
+    <label for="colors">Pick a color</label>
+    <input type="color" name="colors" id="colors" list="red-colors" />
+    <datalist id="red-colors">
+      <option value="#800000"></option>
+      <option value="#8B0000"></option>
+      <option value="#A52A2A"></option>
+      <option value="#DC143C"></option>
+    </datalist>
   </body>
 </html>
