@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: black;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
   color: white;
   line-height: 1.6;
 }
@@ -18,10 +18,11 @@ body {
       rgba(255, 64, 50, 0.8),
       rgba(71, 17, 116, 0.9)
     ),
-    url('../images/background.jpg') no-repeat center/cover;
+    url("../images/background.jpg") no-repeat center/cover;
 }
 
 /* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -52,15 +53,16 @@ body {
 }
 
 /* Main Content */
+
 .main-content {
   display: flex;
-  gap: 50px;
   max-width: 1100px;
+  gap: 50px;
+  padding: 0 40px;
   margin: 200px auto;
   justify-content: center;
   align-items: start;
   height: 100%;
-  padding: 0 40px;
 }
 
 .main-content form {
@@ -72,6 +74,7 @@ body {
 }
 
 /* Form */
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -87,9 +90,9 @@ body {
 .form-group textarea {
   width: 100%;
   padding: 15px;
-  border: 0;
+  border: none;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   outline: 0;
 }
@@ -100,13 +103,12 @@ body {
   margin-bottom: 10px;
 }
 
-/* Button */
 .btn {
   display: block;
   padding: 15px 20px;
   border-radius: 20px;
   width: 100%;
-  border: 0;
+  border: none;
   background-color: #ff4032;
   color: white;
   font-size: 16px;
@@ -118,17 +120,17 @@ body {
 }
 
 /* Text Container */
+
 .text-container h1 {
   font-size: 50px;
   margin: 50px 0 20px;
   line-height: 1.2;
 }
 
-.text-container {
+.text-container p {
   font-size: 18px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .header {
     padding: 30px 10px 10px;
