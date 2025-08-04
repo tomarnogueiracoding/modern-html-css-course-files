@@ -6,3 +6,10 @@ img {
   max-width: 900px;
   margin: 70px auto;
 }
+
+img {
+  max-width: 100%;
+  filter: grayscale(100%) blur(2px);
+
+  filter: none;
+}
